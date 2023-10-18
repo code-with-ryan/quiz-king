@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,500,700,900');
+
+* {
+    margin-top: 0.5%;
+    font-family: 'Roboto',sans-serif;
+}
+.welcome-container {
+    height: 95vh;
+    text-align: center !important;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.drem{
+    font-size: 1.75rem;
+}
+h1 {
+    margin-top: 2%;
+    font-size: 17rem !important;
+}
+p {
+    font-size: 2rem !important;
+    margin-bottom: 2%;
+}
+button {
+    width: 20%;
+}
+
+img {
+    animation: scaleAnimation 1s ease-in-out infinite alternate; 
+}
+
+/* Define the keyframes for the rotation animation */
+@keyframes scaleAnimation {
+    0% {
+        transform: scale(1)
+    }
+    100% {
+        transform: scale(.90);
+    }
+}
+

@@ -1,0 +1,21 @@
+Create React App:
+    - npx create-react-app app_name
+    - The package.json file contains your dependencies. When you npm install, this updates automatically. 
+
+Create Server with Node:
+    - create a seperate directory for your react and server e.g. mkdir server
+    - inside this you will npm install node, which will create a package.json file.
+    - create index.js, which will act as your entry point for your server.
+
+The general file structure of your project is as follows:
+    - public
+        - contains index.html and other public assets
+    - src   
+        - contains your react components
+    - server 
+        - contains your server code
+    
+- NOTE: You must build your project before you can run it from your server. 
+    - from your react directory: npm run build
+    - this will create a build folder
+

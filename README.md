@@ -1,70 +1,90 @@
-# Getting Started with Create React App
+Certainly! Here's a GitHub README for your Quiz-King app:
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+```markdown
+# Quiz-King
 
-## Available Scripts
+Quiz-King is a MERN (MongoDB, Express.js, React, Node.js) project that allows users to test their knowledge by participating in quizzes sourced from the Open Trivia Database via API. This app not only provides an entertaining way to learn new facts but also allows users to compete with their friends and keep track of their scores.
 
-In the project directory, you can run:
+![Quiz-King Screenshot](./images/Screenshot%202023-09-24%20at%202.52.02%20PM.png)
 
-### `npm start`
+## Features
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- Quiz questions sourced from [Open Trivia Database](https://opentdb.com/) ✓
+- User registration and authentication
+- Score tracking and leaderboard to compete with friends ✓
+- RESTful API for players and leaderboard data ✓
+- MIT License ✓
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Technologies Used
 
-### `npm test`
+- MongoDB: A NoSQL database for storing player data and quiz information.
+- Express.js: A web application framework for building robust APIs. 
+- React: A JavaScript library for building user interfaces.
+- Node.js: A server-side runtime environment for running JavaScript.
+- Mongoose: An Object Data Modeling (ODM) library for MongoDB and Node.js.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Play Now via Vercel 
+- Coming Soon!
 
-### `npm run build`
+## Installation
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+1. Clone the repository:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+   ```bash
+   git clone https://github.com/code-with-ryan/quiz-king.git
+   cd quiz-king
+   ```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+2. Install dependencies for both the server and client:
 
-### `npm run eject`
+   ```bash
+   # Install server dependencies
+   cd server
+   npm install
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+   # Install client dependencies (from the project root directory)
+   npm install
+   ```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+3. Set up the environment variables:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+   - Coming Soon!
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+4. Start the development server:
 
-## Learn More
+   ```bash
+   # Start the server (from the server directory)
+   cd server
+   node server.js
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+   # Start the client (from the project root directory)
+   npm start
+   ```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+5. Your Quiz-King app should now be running at http://localhost:3001.
 
-### Code Splitting
+## API Endpoints
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+- `/api/data/players`: Get a list of all players.
+- `/api/data/leaderboard`: Get the current leaderboard.
 
-### Analyzing the Bundle Size
+## License
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
-### Making a Progressive Web App
+## Contributions Welcome
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+We welcome contributions from the open-source community. If you'd like to contribute to Quiz-King, please follow these steps:
 
-### Advanced Configuration
+1. Fork the repository.
+2. Create a new branch for your feature or bug fix.
+3. Make your changes and commit them with clear, concise commit messages.
+4. Push your branch to your fork.
+5. Create a pull request to the `main` branch of this repository.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+Thank you for helping make Quiz-King even better!
 
-### Deployment
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Happy quizzing with Quiz-King! 👑
+```
