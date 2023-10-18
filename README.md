@@ -20,9 +20,13 @@ Quiz-King is a MERN (MongoDB, Express.js, React, Node.js) project that allows us
 - React: A JavaScript library for building user interfaces.
 - Node.js: A server-side runtime environment for running JavaScript.
 - Mongoose: An Object Data Modeling (ODM) library for MongoDB and Node.js.
-
+- 3 Game Modes:
+    - Miss 1
+    - Miss 3
+    - Topic of Choice
+    
 ## Play Now via Vercel 
-- Coming Soon!
+- [Visit Quiz King](https://quiz-king.vercel.app/)
 
 ## Installation
 
