@@ -1,6 +1,4 @@
-Certainly! Here's a GitHub README for your Quiz-King app:
 
-```markdown
 # Quiz-King
 
 Quiz-King is a MERN (MongoDB, Express.js, React, Node.js) project that allows users to test their knowledge by participating in quizzes sourced from the Open Trivia Database via API. This app not only provides an entertaining way to learn new facts but also allows users to compete with their friends and keep track of their scores.
@@ -87,4 +85,3 @@ Thank you for helping make Quiz-King even better!
 ---
 
 Happy quizzing with Quiz-King! 👑
-```
