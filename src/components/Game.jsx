@@ -9,7 +9,7 @@ function Game() {
   const [score, setScore] = useState(0);
 
   useEffect(() => {
-    fetch("https://opentdb.com/api.php?amount=10")
+    fetch("https://opentdb.com/api.php?amount=10&encode=base64")
       .then(res => res.json())
       .then(data => setQuestions(data.results))
   }, []);
@@ -27,13 +27,13 @@ function Game() {
   
     // Map the incorrect answers to buttons
     const incorrectAnswers = currentQuestion.incorrect_answers.map(answer => (
-      <button key={answer} onClick={() => evaluateAnswer(false)}>{answer}</button>
+      <button key={answer} onClick={() => evaluateAnswer(false)}>{atob(answer)}</button>
     ));
   
     // Create a button for the correct answer
     const correctAnswer = (
       <button key={currentQuestion.correct_answer} onClick={() => evaluateAnswer(true)}>
-        {currentQuestion.correct_answer}
+        {atob(currentQuestion.correct_answer)}
       </button>
     );
   
@@ -54,7 +54,7 @@ function Game() {
         {questions.length > 0 && (
           <div>
             <p>Question {questionIndex+1} of {questions.length} </p>
-            <h2>{questions[questionIndex].question}</h2>
+            <h2>{atob(questions[questionIndex].question)}</h2>
               {renderQuestion(questionIndex)}
           </div>
         )}
