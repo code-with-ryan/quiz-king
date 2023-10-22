@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
-import './styles/game.css'
-import BackButton from './BackButton.jsx'
+import {useNavigate} from "react-router-dom";
+import "./styles/game.css"
+import BackButton from "./BackButton.jsx"
 
 //TODO: Figure out question parsing response oddities: ex) Brothers &amp; cousins etc...
 function Game() {
@@ -14,12 +15,18 @@ function Game() {
       .then(data => setQuestions(data.results))
   }, []);
 
+
+  const navigate = useNavigate();
   let evaluateAnswer = (correct) => {
     if(correct){
       setScore((previousScore) => previousScore + 1)
       console.log(score)
     }
     setQuestionIndex((previousIndex) => previousIndex + 1)
+    if(questionIndex >= 9){
+      console.log(`${score} is you`);
+        navigate("/score", {state: {score}});
+    }
   }
 
   let renderQuestion = (questionIndex) => {

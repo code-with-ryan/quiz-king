@@ -1,9 +1,9 @@
-import React from 'react'
-import ReactDOM from 'react-dom'
+import React from 'react';
+import ReactDOM from 'react-dom';
 
-import BackButton from './BackButton.jsx'
+import BackButton from './BackButton.jsx';
 
-import './styles/leaderboards.css'
+import './styles/leaderboards.css';
 
 const LeaderBoards = () => {
     return(
